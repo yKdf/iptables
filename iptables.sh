@@ -1,3 +1,4 @@
+#!/bin/bash curl 
 iptables -t nat -A PREROUTING -d 10.1.0.6 -p tcp --dport 50000 -j DNAT --to-destination 10.8.0.2
 iptables -t nat -A PREROUTING -d 10.1.0.6 -p tcp --dport 50001 -j DNAT --to-destination 10.8.0.2
 iptables -t nat -A PREROUTING -d 10.1.0.6 -p tcp --dport 50002 -j DNAT --to-destination 10.8.0.2
